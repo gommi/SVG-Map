@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>newDanilo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="js/hammer.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+
+    <!--<div class="container-fluid">
+        <div class="row">
+            
+            <div class="box transform"></div>
+            <button type="button" id="buttonToggle" class="transform_two" value=""></button>
+            <div id="list"></div>-->
+            <!--<div id="list" class="col-12 col-md-3 p-0 order-3 order-md-1"></div>-->
+            <!--<div id="mapa"></div>-->
+
+            
+
+            <!--<div id="nesta" class="order-2">Nesta</div>-->
+        <!--</div>
+    </div>-->
+
+    <div class="container-fluid">
+        <div class="row">
+            <!--<div id="box" class="order-2 d-md-none"></div>
+            <button type="button" id="buttonToggle" class="d-block d-md-none order-2"></button>-->
+            <div id="list" class="col-12 col-md-2 p-0 order-2 order-md-1"></div>
+            <div id="mapa" class="col-12 col-md-10 p-0 order-1 order-md-2"></div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+            <div class="row modal-header d-flex align-items-stretch m-0 pl-2 pr-2"></div>
+            <div class="modal-body m-0"></div>
+            <!--<div class="modal-footer">
+                <button id="modalButton" type="button" class="btn" data-bs-dismiss="modal">X</button>
+            </div>-->
+            </div>
+        </div>
+    </div>
+
+    <!-- Spinner -->
+    <div id="loading" class="loader">
+        <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+    <!-- Custom Controls -->
+    <div class="controls">
+      <button id="zoom-in"><i class="fas fa-plus"></i></button>
+      <button id="zoom-out"><i class="fas fa-minus"></i></button>
+      <button id="reset"><i class="fas fa-redo"></i></button>
+    </div>
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/zoomSvg/dist/svg-pan-zoom.js"></script>
+<script src="js/function.js"></script>
+
+</body>
+</html>

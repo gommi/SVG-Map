@@ -1,0 +1,659 @@
+@font-face {
+  font-family: "MinionPro-Bold";
+  src: local("font/MinionPro-Bold.otg"),
+}
+
+.markerGasStation{
+    background-image: url("/imgIcon/Gas_station.png") !important;
+    width: 35px !important;
+    height: 35px !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 10px !important;
+}
+
+.classHover{
+    /*fill: red !important;*/
+    stroke: red !important;
+    stroke-width: 1 !important;
+}
+
+@keyframes border-pulsate {
+    /*0%   {
+        stroke: rgba(255, 0, 0, 1); 
+    }
+    50% { 
+        stroke: rgba(255, 0, 0, 0); 
+    }
+    100%   {
+        stroke: rgba(255, 0, 0, 1); 
+    }*/
+
+    from { 
+        stroke-width: 1;
+        stroke: rgba(255, 0, 0, 0); 
+    }
+    to { 
+        stroke-width: 3;
+        stroke: rgba(255, 0, 0, 1); 
+    }
+
+}
+
+.pulsiranje{
+    animation: border-pulsate 2s infinite;
+}
+
+.loader{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999 !important;
+}
+
+.spinner-border{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+}
+
+.controls{
+    width: 62px !important;
+    height: 130px !important;
+
+    position: absolute !important;
+    bottom: 30px !important;
+    right: 30px !important;
+  
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+#zoom-in{
+    order: 1 !important;
+
+    width: 40px !important;
+    height: 40px !important;
+
+    margin-top: 0 !important;
+    margin-right: 0 !important;
+    margin-bottom: -3px !important;
+    margin-left: 0 !important;
+
+    border-radius: 50% !important;
+
+    background-color: green;
+    color: white;
+    border: 2px solid white;
+}
+
+#reset{
+    height: 50px !important;
+    width: 50px !important;
+
+    margin-top: 0 !important;
+    margin-right: 0 !important;
+    margin-bottom: 0 !important;
+    margin-left: 10px !important;
+
+    border-radius: 50% !important;
+    background-color: green;
+    color: white;
+    border: 2px solid white;
+
+    order: 2 !important;
+}
+
+#zoom-out{
+    width: 40px !important;
+    height: 40px !important;
+
+    margin-top: -3px !important;
+    margin-right: 0 !important;
+    margin-bottom: 0px !important;
+    margin-left: 0 !important;
+
+    border-radius: 50% !important;
+    background-color: green;
+    color: white;
+    border: 2px solid white;
+
+    order: 3 !important;
+}
+
+#mapa{
+    height: 100vh !important;
+    margin: 0 !important;
+    /*background-color: #71D0F6 !important;*/
+    background-image: linear-gradient(217deg, rgba(206,230,193,1), rgba(206,230,193,0.4) 70.71%),
+                      linear-gradient(127deg, rgba(113,208,246,.1), rgba(113,208,246,0.9) 70.71%),
+                      linear-gradient(336deg, rgba(113,208,246,1), rgba(0,0,255,0) 100.71%) !important;
+}
+
+#list .brandName{
+    background: #fff !important;
+}
+
+
+#list .accordion-button{
+    height: 60px;
+    font-size: 18px;
+    background-color: rgba(206, 230, 193, 0.4) !important;
+    color: black !important;
+    font-family: 'Lato', sans-serif !important;
+}
+
+#list .accordion-button:focus{
+    background-color: rgba(206, 230, 193, 0.4) !important;
+    color: black !important;
+    outline:0 !important;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+    
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23YOUR_HEX_CODE'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+}
+
+.accordion-button strong{
+  font-family: "MinionPro-Bold";
+  font-size: 20px !important;
+  font-weight: bold !important;
+}
+
+.accordion-item{
+    border-radius: 0 !important;
+}
+
+#itemListAccording{
+    color: black !important;
+    font-family: 'Lato', sans-serif !important;
+    font-size: 16px !important;
+}
+
+#accordHr{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-bottom: 1px rgba(206, 230, 193, 1) solid !important;
+}
+
+#list{
+    height: 100vh;
+    overflow-y: auto;
+    background-color: rgba(206, 230, 193, 0.4) !important;
+}
+
+svg{
+    padding: 0 !important;
+    position: relative;
+    top: 0px !important;
+    bottom: 0px !important;
+    width: 100%;
+    height: 100vh;
+}
+.iconPin img{
+    padding: 0;
+    height: 30px;
+}
+
+.rowOne{
+    width: 50% !important;
+    margin: 0;
+}
+
+.rowTwo{
+    width: 50% !important;
+
+    margin: 0;
+    padding: 0 !important;
+}
+
+.modalLogo{
+    height: auto;
+}
+.imgLogo{
+    width: 200px;
+    height: 100px;
+}
+
+.modalName{
+    height: 30px !important;
+    font-size: 24px !important;
+    line-height: 24px !important;
+}
+
+.modalSubTitle{
+    height: 30px !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+}
+
+.socialModal{
+    height: auto;
+    padding: 0;
+}
+
+.socMedIcon img{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.iconImg{
+    height: 15px !important;
+    align-self: center;
+    
+    padding-left: 5px;
+}
+
+.sitelink{
+    font-size: 10px;
+    text-align: right;
+
+    padding-bottom: 0;
+
+    align-items: center;
+}
+.sitelink img{
+    height: 15px !important;
+    align-self: center;
+    margin-left: 10px !important;
+}
+
+.address{
+    font-size: 10px;
+    line-height: 10px;
+    text-align: right;
+    align-items: center;
+
+    padding-top: 5px;
+    padding-bottom: 0;
+}
+
+.slider{
+    height: auto;
+    /*border: 1px solid red;*/
+}
+
+.sliderImg{
+    width: 100%;
+    height: auto;
+}
+
+.desc{
+    height: auto;
+    /*border: 1px solid blue;*/
+    padding: 0;
+}
+
+.price{
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: bold;
+    padding: 0;
+}
+
+#modalButton{
+    position: absolute !important;
+    top: -23px !important;
+    right: -23px !important;
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50% !important;
+    background-color: #70C27A !important;
+    color: #fff !important;
+    font-weight: bold !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.modal-header{
+    border-bottom: 1px rgba(206, 230, 193, 1) solid !important;
+}
+
+@media (max-width: 576px) {
+    .controls{
+        position: absolute !important;
+        top: 45% !important;
+        bottom: 0 !important;
+        right: 0 !important;
+        left: 40px !important;
+
+        transform: rotate(270deg);
+    }
+
+    #myModal{
+        padding: 10px !important;
+    }
+    .rowOne{
+        width: 100% !important;
+        margin: 0 !important;
+    }
+
+    .rowTwo{
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .modalLogo{
+        height: auto;
+        padding: 0 !important;
+    }
+
+    .imgLogo{
+        width: 200px;
+        height: 100px;
+    }
+
+    .modalName{
+        height: auto;
+        font-size: 18px !important;
+        line-height: 18px !important;
+        font-weight: bold !important;
+        padding: 0 !important;
+    }
+
+    .modalSubTitle{
+        height: auto;
+        font-size: 14px !important;
+        line-height: 14px !important;
+        padding: 0 !important;
+    }
+    .socMedIcon img{
+        width: 30px !important;
+        height: 30px !important;
+        margin-left: 0px !important;
+        margin-right: 10px !important;
+    }
+    #siteLinkAtag{
+        margin-left: 0px !important;
+    }
+    .sitelink img{
+        margin-left: 0px !important;
+        margin-right: 10px !important;
+    }
+    
+    .address{
+        margin-top: 0 !important;
+        margin-right: 0 !important;
+        margin-left: 10px !important;
+        margin-bottom: 0 !important;
+        padding: 0 !important;
+        text-align: left !important;
+    }
+    #modalButton{
+        position: absolute !important;
+        top: -15px !important;
+        right: -15px !important;
+        width: 40px !important;
+        height: 40px !important;
+        border-radius: 50% !important;
+        background-color: #70C27A !important;
+        color: #fff !important;
+        font-weight: bold !important;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    svg{
+        padding: 0 !important;
+        position: relative;
+        width: 100%;
+    }
+    #list{
+        order: 2 !important;
+        height: 40vh !important;
+        /*margin-top: -400px !important;*/
+        z-index: 2;
+    }
+
+   /*#box{
+        position: absolute;
+        top: 100vh !important;
+        height: 400px !important;
+        margin-top: -400px !important;
+        width: 100%;
+        z-index: 1;
+        background-color: #fff;
+    }*/
+
+    #buttonToggle{
+        order: 2 !important;
+        height: 80px !important;
+        z-index: 3 !important;
+        border: none;
+    }
+
+    .buttonSvg{
+        height: auto;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+    }
+
+    .svgArrow{
+        width: 40px !important;
+        height: 40px !important;
+        margin-top: 15px;
+    }
+
+    #mapa{
+        order: 1 !important;
+        height: 60vh !important;
+    }
+    #mapa > svg{
+        height: 60vh !important;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .controls{
+        position: absolute !important;
+        top: 40% !important;
+        bottom: 0 !important;
+        right: 0 !important;
+        left: 10px !important;
+    }
+
+    #myModal{
+        padding: 10px !important;
+    }
+    
+    .rowOne{
+        width: 100% !important;
+        margin: 0 !important;
+    }
+
+    .rowTwo{
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .modalLogo{
+        height: auto;
+        padding: 0 !important;
+    }
+
+    .imgLogo{
+        width: 200px;
+        height: 100px;
+    }
+
+    .modalName{
+        height: auto;
+        font-size: 24px;
+        line-height: 24px;
+        padding: 0 !important;
+    }
+
+    .modalSubTitle{
+        height: auto;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 0 !important;
+    }
+    .socMedIcon img{
+        width: 30px !important;
+        height: 30px !important;
+        margin-left: 0px !important;
+        margin-right: 10px !important;
+    }
+    #siteLinkAtag{
+        margin-left: 0px !important;
+    }
+    .sitelink img{
+        margin-left: 0px !important;
+        margin-right: 10px !important;
+    }
+    
+    .address{
+        margin-top: 0 !important;
+        margin-right: 0 !important;
+        margin-left: 10px !important;
+        margin-bottom: 0 !important;
+        padding: 0 !important;
+        text-align: left !important;
+    }
+    #modalButton{
+        position: absolute !important;
+        top: -15px !important;
+        right: -15px !important;
+        width: 40px !important;
+        height: 40px !important;
+        border-radius: 50% !important;
+        background-color: #70C27A !important;
+        color: #fff !important;
+        font-weight: bold !important;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    svg{
+        padding: 0 !important;
+        position: relative;
+        width: 100%;
+    }
+    #list{
+        order: 2 !important;
+        height: 40vh !important;
+        /*margin-top: -400px !important;*/
+        z-index: 2;
+    }
+
+   /*#box{
+        position: absolute;
+        top: 100vh !important;
+        height: 400px !important;
+        margin-top: -400px !important;
+        width: 100%;
+        z-index: 1;
+        background-color: #fff;
+    }*/
+
+    #buttonToggle{
+        order: 2 !important;
+        height: 80px !important;
+        z-index: 3 !important;
+        border: none;
+    }
+
+    .buttonSvg{
+        height: auto;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+    }
+
+    .svgArrow{
+        width: 40px !important;
+        height: 40px !important;
+        margin-top: 15px;
+    }
+
+    #mapa{
+        order: 1 !important;
+        height: 60vh !important;
+    }
+    #mapa > svg{
+        height: 60vh !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .modalLogo{
+        height: auto;
+        padding: 0 !important;
+    }
+    
+    .modalName{
+        height: auto;
+        font-size: 18px !important;
+        line-height: 18px !important;
+        font-weight: bold !important;
+        padding: 0 !important;
+    }
+
+    .modalSubTitle{
+        height: auto;
+        font-size: 16px !important;
+        line-height: 16px !important;
+        padding: 0 !important;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 668px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    .controls{
+        position: absolute !important;
+        top: 10px !important;
+        bottom: 0 !important;
+        right: 0 !important;
+        left: 10px !important;
+    } 
+
+}
+
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+
+    .controls{
+        position: absolute !important;
+        top: 10px !important;
+        bottom: 0 !important;
+        right: 0 !important;
+        left: 10px !important;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+    .controls{
+
+        position: absolute !important;
+        bottom: 10px !important;
+        right: 10px !important;
+    }
+}
